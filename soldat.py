@@ -21,3 +21,22 @@ while l != []:
     
     
 # method 2
+
+
+#Number guessing simulator
+import random as r
+
+
+n = r.randint(1,100)
+print(n)
+i = 1
+trial = int(input('Guess the number : '))
+while(trial!=n):
+    if (trial<n):
+        print("higher!")
+    else:
+        print("Lower!")
+    trial = int(input('Guess the number : '))
+    i = i+1
+
+print("Congratulations! you got it right after",i,"trials")
